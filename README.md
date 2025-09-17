@@ -4,12 +4,6 @@ idBook is a VS Code extension built to function like a real life password book. 
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
 #### Creating your idBook
 
 You can create and open your idBook.json with VS Code's Command pallete (Ctrl p) <br />  '> Create ID Book'
