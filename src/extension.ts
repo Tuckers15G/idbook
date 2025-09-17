@@ -14,7 +14,7 @@ export function activate(context: vscode.ExtensionContext) {
 	// This line of code will only be executed once when extension is activated
 	console.log('Congratulations, your extension "idbook" is now active!');
 
-	
+
 	const disposable = vscode.commands.registerCommand('idbook.helloWorld', () => {
 		// The code you place here will be executed every time your command is executed
 		// Display a message box to the user
@@ -119,7 +119,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 	context.subscriptions.push(insertReferenceCommand);
 
+	const reportIssueCommand = vscode.commands.registerCommand('idbook.reportIssue', async () => {
+		vscode.commands.executeCommand('workbench.action.openIssueReporter', {
+			extensionId: "idbook", // Replace with your extension's ID
+		});
+	});
 
+	context.subscriptions.push(reportIssueCommand);
 
 	if (vscode.workspace.workspaceFolders) {
 		const workspacePath = vscode.workspace.workspaceFolders[0].uri.fsPath;
@@ -144,8 +150,8 @@ export function activate(context: vscode.ExtensionContext) {
 
 // Clean up the watcher when the extension is deactivated
 export function deactivate() {
-		if (configWatcher) {
-			configWatcher.close();
-			configWatcher = null;
-		}
+	if (configWatcher) {
+		configWatcher.close();
+		configWatcher = null;
+	}
 }
