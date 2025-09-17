@@ -2,10 +2,10 @@
   "name": "idbook",
   "displayName": "idbook",
   "description": "A VS Code extenstion to store, manage, and reference GUIDs",
-  "version": "1.1.0",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/idbook.git"
+    "url": "https://github.com/Tuckers15G/idbook.git"
   },
   "engines": {
     "vscode": "^1.104.0"
