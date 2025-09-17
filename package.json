@@ -2,6 +2,7 @@
   "name": "idbook",
   "displayName": "idbook",
   "description": "A VS Code extenstion to store, manage, and reference GUIDs",
+  "publisher": "TuckersG",
   "version": "1.0.0",
   "repository": {
     "type": "git",
