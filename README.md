@@ -1,6 +1,6 @@
 # idbook README
 
-idBook is a VS Code extension built to function like a real life password book. It allows you to store long strings or guids in a json to be referenced later. Rather than navigating to another application to copy and paste, these strings can be handily inserted with a couple shortcuts. 
+idBook is a VS Code extension built to function like a real life password book. It allows you to store long strings or guids in a json file to be referenced later. Rather than navigating to another application or tab to copy and paste, these strings can be handily inserted with a couple shortcuts. 
 
 ## Features
 
@@ -12,66 +12,29 @@ For example if there is an image subfolder under your extension project workspac
 
 #### Creating your idBook
 
-You can create and open your idBook.json with VS Code's Command pallete (Ctrl p) "> Create ID Book"
+You can create and open your idBook.json with VS Code's Command pallete (Ctrl p) <br />  '> Create ID Book'
 
-![create Command](images\createCommand.png)
+![create Command](images/createCommand.png)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+This will create an idBook.json file in your project. Open it up and either replace the example key and example value, or add your own key value pairs below it. 
 
-## Requirements
+>Tip: When you create your ID Book this will also create, or append, to your gitignore. In most use cases you will not want to publish your GUIDs with your repo. Unless you plan to upload your GUID's, don't remove idBook.json from .gitignore.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+#### Inserting idBook Values
 
-## Extension Settings
+When you want to insert one of your idBook values open command pallete again (Ctrl p) and use: <br />
+'> Insert Reference (ID Book)'
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+![insert Command](images/insertCommand.png)
 
-For example:
+Select your key from the drop down menu and the value will be inserted at your cursor's location.
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
+Feel free to open issues you encounter here: https://github.com/Tuckers15G/idbook/issues
 
 ### 1.0.0
 
-Initial release of ...
+Initial release of idBook!
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
