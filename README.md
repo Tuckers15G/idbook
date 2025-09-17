@@ -32,3 +32,7 @@ Feel free to open issues you encounter here: https://github.com/Tuckers15G/idboo
 
 Initial release of idBook!
 
+
+### 1.0.1
+
+Updated README.md 
